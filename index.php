@@ -19,7 +19,8 @@
     //Define a default route
     $f3-> route('GET /', function() {
         //Render a view page
-        echo "Pet Home";
+        $view = new Template();
+        echo $view->render('views/home.html');
     });
 
     //Run Fat-Free
